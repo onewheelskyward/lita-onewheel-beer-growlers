@@ -26,7 +26,7 @@ module Lita
             command: true,
             help: {'growlers <$5' => 'Display beers under $5.'}
 
-      route /^growlers (roulette|random|rand|ran|ra|r)$/i,
+      route /^growlers (roulette|random)$/i,
             :taps_by_random,
             command: true,
             help: {'growlers roulette' => 'Can\'t decide?  Let me do it for you!'}

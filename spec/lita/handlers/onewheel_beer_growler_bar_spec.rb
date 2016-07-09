@@ -28,23 +28,18 @@ describe Lita::Handlers::OnewheelBeerGrowlers, lita_handler: true do
 
   it 'displays details for tap 4' do
     send_command 'growlers 4'
-    expect(replies.last).to eq('Apex tap 4) Blind Pig - IPA 6.1%, $6')
+    expect(replies.last).to eq('Growlers tap 4) Spring Wit $12.99')
   end
 
   it 'doesn\'t explode on 1' do
     send_command 'growlers 1'
-    expect(replies.count).to eq(1)
-    expect(replies.last).to eq('Apex tap 1) Aktien Helles Lager 5.3%, $5')
-  end
-
-  it 'gets nitro' do
-    send_command 'growlers nitro'
-    expect(replies.last).to eq('Apex tap 30) Nitro- Stout 4.1%, $4')
+    expect(replies.count).to eq(2)
+    expect(replies.last).to eq('Growlers tap 1) Star Spangled Lager $9.99')
   end
 
   it 'searches for ipa' do
     send_command 'growlers ipa'
-    expect(replies.last).to eq('Apex tap 50) WFO - IPA 7.5%, $5')
+    expect(replies.last).to eq('Growlers tap 26) Mach 10 Imperial IPA $17.99')
   end
 
   # it 'searches for brown' do
@@ -52,104 +47,26 @@ describe Lita::Handlers::OnewheelBeerGrowlers, lita_handler: true do
   #   expect(replies.last).to eq("Bailey's tap 22) GoodLife 29er - India Brown Ale 6.0%, 10oz - $3 | 20oz - $5 | 32oz Crowler - $8, 37% remaining")
   # end
 
-  it 'searches for abv >9%' do
-    send_command 'growlers >9%'
-    expect(replies.count).to eq(8)
-    expect(replies[0]).to eq('Apex tap 2) Armored Fist - Big,Black&Hoppy 10.0%, $5')
-    expect(replies[1]).to eq('Apex tap 3) Barrel Aged Old Thunderpussy 10.8%, $5')
-    expect(replies.last).to eq('Apex tap 46) Sump - Imp Coffee Stout 10.5%, $5')
-  end
-
-  it 'searches for abv > 9%' do
-    send_command 'growlers > 9%'
-    expect(replies.count).to eq(8)
-    expect(replies[0]).to eq('Apex tap 2) Armored Fist - Big,Black&Hoppy 10.0%, $5')
-    expect(replies[1]).to eq('Apex tap 3) Barrel Aged Old Thunderpussy 10.8%, $5')
-    expect(replies.last).to eq('Apex tap 46) Sump - Imp Coffee Stout 10.5%, $5')
-  end
-
-  it 'searches for abv >= 9%' do
-    send_command 'growlers >= 9%'
-    expect(replies.count).to eq(10)
-    expect(replies[0]).to eq('Apex tap 2) Armored Fist - Big,Black&Hoppy 10.0%, $5')
-    expect(replies.last).to eq('Apex tap 46) Sump - Imp Coffee Stout 10.5%, $5')
-  end
-
-  it 'searches for abv <4.1%' do
-    send_command 'growlers <4.1%'
-    expect(replies.count).to eq(2)
-    expect(replies[0]).to eq('Apex tap 15) Grapefruit Radler 2.5%, $5')
-    expect(replies.last).to eq('Apex tap 38) Prairie-Vous Francais - Saison   Just Tapped 3.9%, $5')
-  end
-
-  it 'searches for abv <= 4%' do
-    send_command 'growlers <= 4%'
-    expect(replies.count).to eq(2)
-    expect(replies[0]).to eq('Apex tap 15) Grapefruit Radler 2.5%, $5')
-    expect(replies.last).to eq('Apex tap 38) Prairie-Vous Francais - Saison   Just Tapped 3.9%, $5')
-  end
-
-  it 'searches for prices >$5' do
-    send_command 'growlers >$5'
-    expect(replies.count).to eq(11)
-    expect(replies[0]).to eq('Apex tap 4) Blind Pig - IPA 6.1%, $6')
-    expect(replies[1]).to eq('Apex tap 21) Kristallweissbier 5.4%, $6')
-  end
-
-  it 'searches for prices >=$6' do
-    send_command 'growlers >=$6'
-    expect(replies.count).to eq(11)
-    expect(replies[0]).to eq('Apex tap 4) Blind Pig - IPA 6.1%, $6')
-  end
-
-  it 'searches for prices > $6' do
-    send_command 'growlers > $6'
-    expect(replies.count).to eq(3)
-    expect(replies[0]).to eq('Apex tap 29) Nitro- Shake - Choco Porter 5.9%, $8')
-  end
-
-  it 'searches for prices <$4.1' do
-    send_command 'growlers <$4.1'
-    expect(replies.count).to eq(4)
-    expect(replies[0]).to eq('Apex tap 8) Cheap, cold 4.7%, $3')
-  end
-
-  it 'searches for prices < $4.01' do
-    send_command 'growlers < $4.01'
-    expect(replies.count).to eq(4)
-    expect(replies[0]).to eq('Apex tap 8) Cheap, cold 4.7%, $3')
-  end
-
-  it 'searches for prices <= $4.00' do
-    send_command 'growlers <= $4.00'
-    expect(replies.count).to eq(4)
-    expect(replies[0]).to eq('Apex tap 8) Cheap, cold 4.7%, $3')
+  it 'searches for prices >$11' do
+    send_command 'growlers >$11'
+    expect(replies.count).to eq(29)
+    expect(replies[1]).to eq('Growlers tap 2) Helles $11.99')
   end
 
   it 'runs a random beer through' do
     send_command 'growlers roulette'
-    expect(replies.count).to eq(1)
-    expect(replies.last).to include('Apex tap')
+    expect(replies.count).to eq(2)
+    expect(replies.last).to include('Growlers tap')
   end
 
   it 'runs a random beer through' do
     send_command 'growlers random'
-    expect(replies.count).to eq(1)
-    expect(replies.last).to include('Apex tap')
+    expect(replies.count).to eq(2)
+    expect(replies.last).to include('Growlers tap')
   end
 
-  it 'searches with a space' do
-    send_command 'growlers cider riot'
-    expect(replies.last).to eq('Apex tap 10) Cider- NeverGiveAnInch -Rosé  6.9%, $5')
-  end
-
-  it 'displays low abv' do
-    send_command 'growlersabvhigh'
-    expect(replies.last).to eq('Apex tap 31) Notorious - IIIPA 11.5%, $5')
-  end
-
-  it 'displays high abv' do
-    send_command 'growlersabvlow'
-    expect(replies.last).to eq('Apex tap 15) Grapefruit Radler 2.5%, $5')
-  end
+  # it 'searches with a space' do
+  #   send_command 'growlers cider riot'
+  #   expect(replies.last).to eq('Apex tap 10) Cider- NeverGiveAnInch -Rosé  6.9%, $5')
+  # end
 end
