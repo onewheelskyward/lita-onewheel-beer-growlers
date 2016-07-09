@@ -60,7 +60,7 @@ module Lita
         Lita.logger.debug 'get_source started'
         unless (response = redis.get('page_response'))
           Lita.logger.info 'No cached result found, fetching.'
-          response = RestClient.get('http://apexbar.com/menu')
+          response = RestClient.get('http://visualizeapi.com/api/hawthorne')
           redis.setex('page_response', 1800, response)
         end
         parse_response response
@@ -70,24 +70,21 @@ module Lita
       # Future implementations could simply override this implementation-specific
       # code to help this grow more widely.
       def parse_response(response)
-        Lita.logger.debug 'parse_response started.'
         gimme_what_you_got = {}
-        noko = Nokogiri.HTML response
-        noko.css('table.table tbody tr').each_with_index do |beer_node, index|
-          # gimme_what_you_got
-          tap_name = (index + 1).to_s
+        response_doc = JSON.parse(response)
+        response_doc['data'].each do |id, tap|
+          tap_name = id
 
-          brewery = beer_node.css('td')[2].children.to_s
-          beer_name = beer_node.css('td')[0].children.text.to_s
+          brewery = tap['brewery']
+          beer_name = tap['beer']
 
-          beer_type = beer_name.match(/\s*-\s*\w+$/).to_s
-          beer_type.sub! /\s+-\s+/, ''
+          beer_type = tap['style']
+          # beer_type.sub! /\s+-\s+/, ''
 
-          abv = beer_node.css('td')[4].children.to_s
+          # abv = beer_node.css('td')[4].children.to_s
           full_text_search = "#{brewery} #{beer_name.to_s.gsub /(\d+|')/, ''}"  # #{beer_desc.to_s.gsub /\d+\.*\d*%*/, ''}
 
-          price_node = beer_node.css('td')[1].children.to_s
-          price = (price_node.sub /\$/, '').to_f
+          price = (tap['prices'][0].sub /\$/, '').to_f
 
           gimme_what_you_got[tap_name] = {
           #     type: tap_type,
@@ -95,7 +92,7 @@ module Lita
               brewery: brewery.to_s,
               name: beer_name.to_s,
               desc: beer_type.to_s,
-              abv: abv.to_f,
+              # abv: abv.to_f,
               price: price,
               search: full_text_search
           }

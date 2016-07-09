@@ -1,0 +1,386 @@
+{
+  "status": "ok",
+  "cache": "2016-07-09T07:15:58.390Z",
+  "data": {
+    "1": {
+      "glass": "Nonic",
+      "prices": [
+        "$9.99"
+      ],
+      "fill": 0.5919354838709678,
+      "added": "2016-07-01T20:15:07.607Z",
+      "beer": "Star Spangled Lager",
+      "style": "Lager ",
+      "brewery": "Ex Novo"
+    },
+    "2": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.3122557726465365,
+      "added": "2016-07-02T04:09:12.694Z",
+      "beer": "Helles",
+      "style": "Munich-Style Helles Lager ",
+      "brewery": "pFriem"
+    },
+    "3": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.32580645161290306,
+      "added": "2016-05-21T04:45:38.228Z",
+      "beer": "German Pilsner",
+      "style": "Pilsner ",
+      "brewery": "ColdFire"
+    },
+    "4": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.5003253090435914,
+      "added": "2016-04-10T04:17:24.901Z",
+      "beer": "Spring Wit",
+      "style": "Witbier ",
+      "brewery": "Drinking Horse"
+    },
+    "5": {
+      "glass": "Nonic",
+      "prices": [
+        "$13.99"
+      ],
+      "fill": 0.6032530904359141,
+      "added": "2016-06-26T22:54:34.416Z",
+      "beer": "Side Line",
+      "style": "Dry-Hopped Saison w/ triticale- Hops (Crystal, Santiam, & Experimental hops)",
+      "brewery": "Upright"
+    },
+    "6": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.8935483870967742,
+      "added": "2016-07-01T20:15:29.551Z",
+      "beer": "El Guapo",
+      "style": "Blonde Ale w/ cucumber, habanero, and lime",
+      "brewery": "Flat Tail"
+    },
+    "7": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.11090725806451554,
+      "added": "2016-05-21T04:46:19.087Z",
+      "beer": "Dam Wild: Hops & Lemon Verbena",
+      "style": "Wild Ale w/ lemon verbena- Hops (Citra & Simcoe)",
+      "brewery": "Flat Tail"
+    },
+    "8": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.8048387096774193,
+      "added": "2016-06-15T18:02:39.268Z",
+      "beer": "Fuzztail",
+      "style": "Hefeweizen ",
+      "brewery": "Sunriver"
+    },
+    "9": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.16513104838709627,
+      "added": "2016-05-21T04:47:02.114Z",
+      "beer": "Kirsch Gose",
+      "style": "Sour Cherry Gose ",
+      "brewery": "Victory"
+    },
+    "10": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.8126219908913468,
+      "added": "2016-07-04T21:50:55.468Z",
+      "beer": "Little Red Pils",
+      "style": "Amber Lager ",
+      "brewery": "Double Mountain"
+    },
+    "11": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.5415038484310243,
+      "added": "2016-07-01T20:18:59.897Z",
+      "beer": "Spruce Budd Ale",
+      "style": "Ale w/ Spruce tips",
+      "brewery": "Fort George"
+    },
+    "12": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.7870967741935483,
+      "added": "2016-07-01T21:30:43.324Z",
+      "beer": "Kissed by Melons",
+      "style": "Berliner Weisse w/melon",
+      "brewery": "Stickmen"
+    },
+    "13": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.5564516129032258,
+      "added": "2016-06-26T22:54:47.116Z",
+      "beer": "Red Thistle Ale",
+      "style": "ESB ",
+      "brewery": "Golden Valley"
+    },
+    "14": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.9112903225806451,
+      "added": "2016-07-01T20:26:18.446Z",
+      "beer": "Pathfinder",
+      "style": "Pale Ale w/ juniper berries",
+      "brewery": "Viking Braggot Co."
+    },
+    "16": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.7915926583777383,
+      "added": "2016-07-01T20:27:49.17Z",
+      "beer": "Hop Slice",
+      "style": "Session IPA  w/ Meyer Lemon",
+      "brewery": "Deschutes"
+    },
+    "17": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.6096774193548387,
+      "added": "2016-07-02T18:06:05.805Z",
+      "beer": "Best Coast IPA",
+      "style": "American IPA ",
+      "brewery": "Ancestry"
+    },
+    "18": {
+      "glass": "Nonic",
+      "prices": [
+        "$13.99"
+      ],
+      "fill": 0.7516129032258064,
+      "added": "2016-07-02T04:06:33.418Z",
+      "beer": "Here Comes Mango!",
+      "style": "American IPA w/Mango",
+      "brewery": "Belching Beaver"
+    },
+    "19": {
+      "glass": "Nonic",
+      "prices": [
+        "$10.99"
+      ],
+      "fill": 0.6983870967741935,
+      "added": "2016-07-01T20:33:23.572Z",
+      "beer": "German IPA",
+      "style": "IPA w/ Kolsch yeast- Hops (Hull Melon, TNT)",
+      "brewery": "Ex Novo"
+    },
+    "20": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.9290322580645162,
+      "added": "2016-07-01T20:33:02.911Z",
+      "beer": "Mosaic Eruption",
+      "style": "IPA - Hops (Mosaic, Amarillo, Centennial)",
+      "brewery": "Mazama"
+    },
+    "21": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.485483870967742,
+      "added": "2016-07-01T02:12:35.077Z",
+      "beer": "IPA",
+      "style": "IPA ",
+      "brewery": "Buoy"
+    },
+    "23": {
+      "glass": "Nonic",
+      "prices": [
+        "$14.99"
+      ],
+      "fill": 0.8334417696811971,
+      "added": "2016-07-06T23:18:58.71Z",
+      "beer": "Hop Venom",
+      "style": "Imperial IPA ",
+      "brewery": "Boneyard"
+    },
+    "24": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.7161290322580646,
+      "added": "2016-07-01T20:39:35.813Z",
+      "beer": "Dynamic Duo",
+      "style": "Imperial IPA - Hops (Citra & Chinook)",
+      "brewery": "Ex Novo"
+    },
+    "26": {
+      "glass": "Nonic",
+      "prices": [
+        "$17.99"
+      ],
+      "fill": 0.25384072580645134,
+      "added": "2016-04-23T21:30:18.772Z",
+      "beer": "Mach 10 Imperial IPA",
+      "style": "Imperial IPA ",
+      "brewery": "Bear Republic"
+    },
+    "27": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.35107351984385177,
+      "added": "2016-06-04T22:23:41.909Z",
+      "beer": "Oatis Reddin'",
+      "style": "Imperial Red Ale w/ Oats",
+      "brewery": "Uptown Market"
+    },
+    "28": {
+      "glass": "Nonic",
+      "prices": [
+        "$13.99"
+      ],
+      "fill": 0.6044242029928433,
+      "added": "2016-07-01T20:41:53.148Z",
+      "beer": "Pale Death",
+      "style": "Belgian-Style Imperial IPA ",
+      "brewery": "Double Mountain"
+    },
+    "29": {
+      "glass": "Nonic",
+      "prices": [
+        "$37.99"
+      ],
+      "fill": 0.46447806354009075,
+      "added": "2016-07-01T20:42:20.775Z",
+      "beer": "El Duque do Porto",
+      "style": "Belgian Golden Strong  - Barrel Aged (Port)",
+      "brewery": "Mazama"
+    },
+    "30": {
+      "glass": "Nonic",
+      "prices": [
+        "$13.99"
+      ],
+      "fill": 0.3937802419354839,
+      "added": "2016-07-06T23:24:17.67Z",
+      "beer": "Dubbel Entendre",
+      "style": "Belgian-Style Dubbel ",
+      "brewery": "Sound Brewery"
+    },
+    "31": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.05768145161290268,
+      "added": "2016-05-21T04:52:52.174Z",
+      "beer": "Cole Porter",
+      "style": "American Porter ",
+      "brewery": "Magnolia"
+    },
+    "32": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.6983870967741935,
+      "added": "2016-06-04T22:24:03.931Z",
+      "beer": "Breakfast Stout",
+      "style": "Oatmeal Stout ",
+      "brewery": "Barley Brown's"
+    },
+    "33": {
+      "glass": "Nonic",
+      "prices": [
+        "$11.99"
+      ],
+      "fill": 0.8935483870967742,
+      "added": "2016-07-03T22:13:17.392Z",
+      "beer": "Coconut Vanilla Porter",
+      "style": "Porter ",
+      "brewery": "Ex Novo"
+    },
+    "34": {
+      "glass": "Nonic",
+      "prices": [
+        "$14.99"
+      ],
+      "fill": 0.36096822995461425,
+      "added": "2016-06-30T01:23:57.242Z",
+      "beer": "Gingerade",
+      "style": "Kombucha w/ fresh pressed ginger"
+    },
+    "35": {
+      "glass": "Nonic",
+      "prices": [
+        "$14.99"
+      ],
+      "fill": 0.14196671709531,
+      "added": "2016-06-26T22:55:28.298Z",
+      "beer": "Hibiscus No. 7",
+      "style": "Kombucha"
+    },
+    "36": {
+      "glass": "Nonic",
+      "prices": [
+        "$14.99"
+      ],
+      "fill": 0.9290322580645162,
+      "added": "2016-07-03T18:26:23.523Z",
+      "beer": "Bad Apple",
+      "style": "Dry Cider "
+    },
+    "38": {
+      "glass": "Nonic",
+      "prices": [
+        "$20.99"
+      ],
+      "fill": 0.30472012102874424,
+      "added": "2016-06-03T22:30:28.034Z",
+      "beer": "Sunny Cider",
+      "style": "Ginger Lemon "
+    },
+    "39": {
+      "glass": "Nonic",
+      "prices": [
+        "$12.99"
+      ],
+      "fill": 0.34255040322580627,
+      "added": "2016-06-23T00:29:10.849Z",
+      "beer": "Wholesome Apple",
+      "style": "Hard Cider "
+    }
+  }
+}
