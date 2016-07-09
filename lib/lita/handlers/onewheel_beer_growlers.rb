@@ -6,17 +6,17 @@ require 'lita-onewheel-beer-base'
 module Lita
   module Handlers
     class OnewheelBeerGrowlers < OnewheelBeerBase
-      route /^apex$/i,
+      route /^growlers/i,
             :taps_list,
             command: true,
             help: {'growlers' => 'Display the current Apex Bar taps.'}
 
-      route /^apex ([\w ]+)$/i,
+      route /^growlers ([\w ]+)$/i,
             :taps_deets,
             command: true,
             help: {'growlers 4' => 'Display the tap 4 deets, including prices.'}
 
-      route /^apex ([<>=\w.\s]+)%$/i,
+      route /^growlers ([<>=\w.\s]+)%$/i,
             :taps_by_abv,
             command: true,
             help: {'growlers >4%' => 'Display beers over 4% ABV.'}
@@ -42,13 +42,13 @@ module Lita
             help: {'growlersabvhigh' => 'Show me the highest abv keg.'}
 
       def send_response(tap, datum, response)
-        reply = "Apex tap #{tap}) #{get_tap_type_text(datum[:type])}"
+        reply = "Growlers tap #{tap}) #{get_tap_type_text(datum[:type])}"
         # reply += "#{datum[:brewery]} "
         reply += "#{datum[:name]} "
         # reply += "- #{datum[:desc]}, "
         # reply += "Served in a #{datum[1]['glass']} glass.  "
         # reply += "#{datum[:remaining]}"
-        reply += "#{datum[:abv]}%, "
+        # reply += "#{datum[:abv]}%, "
         reply += "$#{datum[:price].to_s.sub '.0', ''}"
 
         Lita.logger.info "send_response: Replying with #{reply}"
